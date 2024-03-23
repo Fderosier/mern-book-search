@@ -10,7 +10,7 @@ module.exports = mongoose.connection;
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const uri = "mongodb+srv://frankiederosier2727:<Briar122>@mern-book-search.xdfcw97.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
+const url = "mongodb+srv://frankiederosier2727:<Briar122>@mern-book-search.xdfcw97.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
