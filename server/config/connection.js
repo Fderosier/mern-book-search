@@ -1,15 +1,12 @@
 const mongoose = require('mongoose');
 
-
-
-const uri = "mongodb+srv://frankiederosier2727:<Briar122>@mern-book-search.xdfcw97.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
-
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/googlebooks');
 
 module.exports = mongoose.connection;
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-
+const uri = "mongodb+srv://frankiederosier2727@gmail.com:<Briar122!>@mern-book-search.xdfcw97.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
