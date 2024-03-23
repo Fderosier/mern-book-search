@@ -1,14 +1,14 @@
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your connection string.
 // Replace the following variables with your actual MongoDB connection details
-const username = "frankiederosier2727";
-const password = "<Briar122!>";
+const username = "derosierfrankie";
+const password = "<mydogdiesel>";
 const hostname = "mern-book-search.xdfcw97.mongodb.net";
 const databaseName = "sample_mflix";
 
 // Construct the MongoDB connection URI
 const uri = `mongodb+srv://${username}:${password}@${hostname}/${databaseName}?retryWrites=true&w=majority`;
-//const uri = "mongodb+srv://frankiederosier2727:<Briar122!>@mern-book-search.xdfcw97.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
+//const uri = "mongodb+srv://derosierfrankie:<mydogdiesel!>@mern-book-search.xdfcw97.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
 const client = new MongoClient(uri);
 async function run() {
   try {
