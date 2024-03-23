@@ -2,11 +2,11 @@ const { MongoClient } = require("mongodb");
 // Replace the uri string with your connection string.
 // Replace the following variables with your actual MongoDB connection details
 const username = "derosierfrankie";
-const password = "<mydogdiesel>";
+const password = "mydogdiesel";
 const hostname = "mern-book-search.a8hpqxi.mongodb.net";
 const databaseName = "sample_mflix";
 
-const uri = "mongodb+srv://derosierfrankie:<mydogdiesel>@mern-book-search.a8hpqxi.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
+const uri = "mongodb+srv://derosierfrankie:mydogdiesel@mern-book-search.a8hpqxi.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
