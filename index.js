@@ -4,11 +4,12 @@ const { MongoClient } = require("mongodb");
 const username = "derosierfrankie";
 const password = "mydogdiesel";
 const hostname = "mern-book-search.a8hpqxi.mongodb.net";
-const databaseName = "sample_mflix";
+const databaseName = "mern-book-search";
 
-const uri = "mongodb+srv://derosierfrankie:mydogdiesel@mern-book-search.a8hpqxi.mongodb.net/?retryWrites=true&w=majority&appName=mern-book-search";
+const uri = "mongodb+srv://derosierfrankie:mydogdiesel@mern-book-search.a8hpqxi.mongodb.net/<mern-book-search>?retryWrites=true&w=majority&appName=mern-book-search";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
+  
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
